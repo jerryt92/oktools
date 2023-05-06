@@ -6,7 +6,7 @@
     <meta name="keywords" content="二维码,二维码制作,二维码生成,二维码图片">
     <meta name="description" content="在线二维码制作工具,二维码制作,二维码生成,二维码图片">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
     <style>
         .select {
             flex-shrink: 1;
@@ -48,12 +48,12 @@
             </div>
             <div class="options">
                 <div class="group fullwidth">
-                    <span class="static">尺寸(px)</span>
+                    <span class="./static">尺寸(px)</span>
                     <input id="input_size" class="input" type="number" value="280"
                            oninput="if(value>1000)value=1000">
                 </div>
                 <div class="group fullwidth mt-2">
-                    <span class="static">纠错等级</span>
+                    <span class="./static">纠错等级</span>
                     <select id="select_level" class="select">
                         <option value="2">H : 高</option>
                         <option value="3" selected>Q : 中等</option>
@@ -62,11 +62,11 @@
                     </select>
                 </div>
                 <div class="group fullwidth mt-2">
-                    <span class="static">背景颜色</span>
+                    <span class="./static">背景颜色</span>
                     <input id="input_bg" class="input" type="color" value="#ffffff">
                 </div>
                 <div class="group fullwidth mt-2">
-                    <span class="static">前景颜色</span>
+                    <span class="./static">前景颜色</span>
                     <input id="input_fg" class="input" type="color" value="#000000">
                 </div>
                 <button class="button primary fullwidth mt-2" onclick="generate()">生成二维码</button>
@@ -94,7 +94,7 @@
         </div>
     </div>
 </main>
-<script src="../static/js/qrcode.min.js"></script>
+<script src="...././static/js/qrcode.min.js"></script>
 <script>
     let img_qrcode = document.getElementById('img_qrcode');
 

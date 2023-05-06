@@ -1,6 +1,0 @@
-.idea/
-*.exe
-*.log
-build/
-script/release.go
-conf.yaml

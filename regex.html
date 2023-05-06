@@ -6,7 +6,7 @@
     <meta name="keywords" content="正则表达式,正则匹配,正则测试,常用正则表达式">
     <meta name="description" content="在线正则测试工具,正则匹配,正则测试,常用正则表达式">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
 </head>
 <body>
 {{template "aside"}}
@@ -16,7 +16,7 @@
         <textarea id="area_text" class="textarea mt-2" rows="5"></textarea>
         <div class="flex mt-2">
             <label class="group fullwidth">
-                <span class="static">正则表达式</span>
+                <span class="./static">正则表达式</span>
                 <input id="input_pattern" class="input">
             </label>
             <label class="checkbox"><input id="cb_global_search" type="checkbox" checked><span>全局搜索</span></label>
@@ -25,7 +25,7 @@
         </div>
         <textarea id="area_matched" class="textarea mt-2" rows="5" disabled></textarea>
         <div class="group fullwidth mt-2">
-            <span class="static">替换文本</span>
+            <span class="./static">替换文本</span>
             <input id="input_replace" class="input">
             <button class="button primary" onclick="replace()">替换</button>
         </div>
@@ -34,6 +34,6 @@
         <div id="tables"></div>
     </div>
 </main>
-<script src="/static/js/regex.js"></script>
+<script src="./static/js/regex.js"></script>
 </body>
 </html>
