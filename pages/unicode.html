@@ -6,11 +6,11 @@
     <meta name="keywords" content="Unicode转中文,中文转Unicode,ASCII转Unicode,Unicode转ASCII">
     <meta name="description" content="在线Unicode编码转换工具,Unicode转中文,中文转Unicode,ASCII转Unicode,Unicode转ASCII">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href="./static/css/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
+    <link href="../static/css/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
 </head>
 <body>
-{{template "aside"}}
+<div id="aside"></div>
 <main>
     <div class="container">
         <h1>Unicode编码转换</h1>
@@ -98,6 +98,12 @@
         area_output.value = '';
         selectBtn(-1)
     }
+</script>
+<script src="../static/js/jquery-3.6.4.min.js"></script>
+<script>
+    $.get("./aside.html", function(data) {
+        $("#aside").html(data);
+    });
 </script>
 </body>
 </html>

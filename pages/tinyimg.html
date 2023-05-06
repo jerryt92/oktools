@@ -6,7 +6,7 @@
     <meta name="keywords" content="图片压缩,图片在线压缩,JS压缩图片">
     <meta name="description" content="在线图片压缩工具,图片在线压缩,JS压缩图片">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
     <style>
         .textarea {
             min-height: 18em;
@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-{{template "aside"}}
+<div id="aside"></div>
 <main>
     <div class="container">
         <h1>图片压缩</h1>
@@ -57,6 +57,12 @@
         </div>
     </div>
 </main>
-<script src="./static/js/tinyimg.js"></script>
+<script src="../static/js/tinyimg.js"></script>
+<script src="../static/js/jquery-3.6.4.min.js"></script>
+<script>
+    $.get("./aside.html", function(data) {
+        $("#aside").html(data);
+    });
+</script>
 </body>
 </html>

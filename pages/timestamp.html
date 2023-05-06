@@ -6,10 +6,10 @@
     <meta name="keywords" content="Unix时间戳,时间戳,时间戳转换,毫秒,北京时间">
     <meta name="description" content="在线Unix时间戳转换,时间戳,时间戳转换,毫秒,北京时间">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
 </head>
 <body>
-{{template "aside"}}
+<div id="aside"></div>
 <main>
     <div class="container">
         <h1>Unix时间戳</h1>
@@ -109,5 +109,11 @@
     </div>
 </main>
 <script src="...././static/js/timestamp.js"></script>
+<script src="../static/js/jquery-3.6.4.min.js"></script>
+<script>
+    $.get("./aside.html", function(data) {
+        $("#aside").html(data);
+    });
+</script>
 </body>
 </html>

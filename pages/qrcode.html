@@ -6,7 +6,7 @@
     <meta name="keywords" content="二维码,二维码制作,二维码生成,二维码图片">
     <meta name="description" content="在线二维码制作工具,二维码制作,二维码生成,二维码图片">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
     <style>
         .select {
             flex-shrink: 1;
@@ -33,7 +33,7 @@
     </style>
 </head>
 <body>
-{{template "aside"}}
+<div id="aside"></div>
 <main>
     <div class="container">
         <h1>二维码制作</h1>
@@ -147,6 +147,12 @@
         a.href = url;
         a.dispatchEvent(event)
     }
+</script>
+<script src="../static/js/jquery-3.6.4.min.js"></script>
+<script>
+    $.get("./aside.html", function(data) {
+        $("#aside").html(data);
+    });
 </script>
 </body>
 </html>

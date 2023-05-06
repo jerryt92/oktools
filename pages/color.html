@@ -6,7 +6,7 @@
     <meta name="keywords" content="颜色值转换,RGB转十六进制,RGB,RGBA,HEX,HSL,WEB标准色">
     <meta name="description" content="在线颜色值转换工具,RGB转十六进制,RGB,RGBA,HEX,HSL,WEB标准色">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
     <style>
         .tag {
             color: white;
@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-{{template "aside"}}
+<div id="aside"></div>
 <main>
     <div class="container">
         <h1>颜色值转换</h1>
@@ -66,6 +66,12 @@
         <div id="table_list"></div>
     </div>
 </main>
-<script src="./static/js/color_convert.js"></script>
+<script src="../static/js/color_convert.js"></script>
+<script src="../static/js/jquery-3.6.4.min.js"></script>
+<script>
+    $.get("./aside.html", function(data) {
+        $("#aside").html(data);
+    });
+</script>
 </body>
 </html>

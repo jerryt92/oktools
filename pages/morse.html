@@ -6,11 +6,11 @@
     <meta name="keywords" content="morse电码,摩斯电码,摩斯密码">
     <meta name="description" content="在线摩斯电码编码/解码工具,morse电码,摩斯电码,摩斯密码">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href="./static/css/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
+    <link href="../static/css/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
 </head>
 <body>
-{{template "aside"}}
+<div id="aside"></div>
 <main>
     <div class="container">
         <h1>摩斯电码</h1>
@@ -30,6 +30,12 @@
         <textarea id="area_output" class="textarea mt-2" rows="15" onpaste="setTimeout(decode, 1)"></textarea>
     </div>
 </main>
-<script src="./static/js/morse.js"></script>
+<script src="../static/js/morse.js"></script>
+<script src="../static/js/jquery-3.6.4.min.js"></script>
+<script>
+    $.get("./aside.html", function(data) {
+        $("#aside").html(data);
+    });
+</script>
 </body>
 </html>

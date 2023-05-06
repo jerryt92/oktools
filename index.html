@@ -2,107 +2,93 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>在线工具 - OKTools</title>
+    <title>Jerryt92的在线工具</title>
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="keywords" content="在线工具,工具,开发工具,二维码,JSON格式化,Unix时间戳,Base64,MD5,加密解密">
-    <meta name="description" content="OKTools是一个在线工具网站。提供二维码制作、JSON格式化、Unix时间戳转换、Base64编码、加密解密、图片压缩、IP查询、Hash计算等常用工具。">
+    <meta name="description"
+          content="O在线工具网站。提供二维码制作、JSON格式化、Unix时间戳转换、Base64编码、加密解密、图片压缩、IP查询、Hash计算等常用工具。">
     <link rel="stylesheet" href="./static/css/style.css" type="text/css">
 </head>
 <body style="display:block;background:var(--color-accent)">
 <header>
     <div class="container">
-        <a class="logo" href="/./static"><strong>OKTools</strong></a>
+        <div class="logo"></div>
         <nav>
-            <a class="nav-item" onclick="addFavorite()">加入收藏</a>
-            <a class="nav-item" target="_blank" href="https://support.qq.com/products/66960">留言反馈</a>
-            <a class="nav-item" href="https://github.com/wangyiwy/oktools">项目源码</a>
+            <!--            <a class="nav-item" onclick="addFavorite()">加入收藏</a>-->
+            <!--            <a class="nav-item" target="_blank" href="https://support.qq.com/products/66960">留言反馈</a>-->
+            <!--            <a class="nav-item" href="https://github.com/wangyiwy/oktools">项目源码</a>-->
+            <div>Power by <a class="logo" href="https://oktools.net"><strong>OKTools</strong></a></div>
         </nav>
     </div>
 </header>
 <div class="container tools">
-    <a class="tool" href="/json"><p>JSON格式化</p>
-        <p>https://oktools.net/json</p>
+    <a class="tool" href="pages/json.html"><p>JSON格式化</p>
+        <p>JSON格式化工具</p>
     </a>
-    <a class="tool" href="/json2xml"><p>JSON/XML转换</p>
-        <p>https://oktools.net/json2xml</p>
+    <a class="tool" href="pages/json2xml.html"><p>JSON/XML转换</p>
+        <p>JSON和XML之间的转换工具</p>
     </a>
-    <a class="tool" href="/json2yaml"><p>JSON/YAML转换</p>
-        <p>https://oktools.net/json2yaml</p>
+    <a class="tool" href="pages/json2yaml.html"><p>JSON/YAML转换</p>
+        <p>JSON和YAML之间的转换工具</p>
     </a>
-    <a class="tool" href="/json2go"><p>JSON转Go Struct</p>
-        <p>https://oktools.net/json2go</p>
+    <a class="tool" href="pages/json2go.html"><p>JSON转Go Struct</p>
+        <p>将JSON转换为Go结构体的工具</p>
     </a>
-    <a class="tool" href="/base64"><p>Base64编码解码</p>
-        <p>https://oktools.net/base64</p>
+    <a class="tool" href="pages/base64.html"><p>Base64编码解码</p>
+        <p>Base64编码和解码工具</p>
     </a>
-    <a class="tool" href="/image2base64"><p>图片Base64编码</p>
-        <p>https://oktools.net/image2base64</p>
+    <a class="tool" href="pages/image2base64.html"><p>图片Base64编码</p>
+        <p>将图片转换为Base64编码的工具</p>
     </a>
-    <a class="tool" href="/timestamp"><p>Unix时间戳</p>
-        <p>https://oktools.net/timestamp</p>
+    <a class="tool" href="pages/timestamp.html"><p>Unix时间戳</p>
+        <p>Unix时间戳转换工具</p>
     </a>
-    <a class="tool" href="/color"><p>颜色值转换</p>
-        <p>https://oktools.net/color</p>
+    <a class="tool" href="pages/color.html"><p>颜色值转换</p>
+        <p>颜色值转换工具</p>
     </a>
-    <a class="tool" href="/number"><p>进制转换</p>
-        <p>https://oktools.net/placeholder</p>
+    <a class="tool" href="pages/number.html"><p>进制转换</p>
+        <p>数字进制转换工具</p>
     </a>
-    <a class="tool" href="/url"><p>URL编码解码</p>
-        <p>https://oktools.net/url</p>
+    <a class="tool" href="pages/url.html"><p>URL编码解码</p>
+        <p>URL编码和解码工具</p>
     </a>
-    <a class="tool" href="/unicode"><p>Unicode编码转换</p>
-        <p>https://oktools.net/unicode</p>
+    <a class="tool" href="pages/unicode.html"><p>Unicode编码转换</p>
+        <p>Unicode编码转换工具</p>
     </a>
-    <a class="tool" href="/pdf2img"><p>PDF转图片</p>
-        <p>https://oktools.net/pdf2img</p>
+    <a class="tool" href="pages/pdf2img.html"><p>PDF转图片</p>
+        <p>将PDF文件转换为图片的工具</p>
     </a>
-    <a class="tool" href="/morse"><p>摩斯电码</p>
-        <p>https://oktools.net/morse</p>
+    <a class="tool" href="pages/morse.html"><p>摩斯电码</p>
+        <p>摩斯电码转换工具</p>
     </a>
-    <a class="tool" href="/hash"><p>Hash计算</p>
-        <p>https://oktools.net/ip</p>
+    <a class="tool" href="pages/hash.html"><p>Hash计算</p>
+        <p>Hash值计算工具</p>
     </a>
-    <a class="tool" href="/file-hash"><p>文件Hash计算</p>
-        <p>https://oktools.net/file-hash</p>
+    <a class="tool" href="pages/file_hash.html"><p>文件Hash计算</p>
+        <p>计算文件的Hash值的工具</p>
     </a>
-    <a class="tool" href="/aes"><p>AES加密解密</p>
-        <p>https://oktools.net/aes</p>
+    <a class="tool" href="pages/aes.html"><p>AES加密解密</p>
+        <p>AES加密和解密工具</p>
     </a>
-    <a class="tool" href="/des"><p>DES加密解密</p>
-        <p>https://oktools.net/des</p>
+    <a class="tool" href="pages/des.html"><p>DES加密解密</p>
+        <p>DES加密和解密工具</p>
     </a>
-    <a class="tool" href="/rsa"><p>RSA加密解密</p>
-        <p>https://oktools.net/rsa</p>
+    <a class="tool" href="pages/rsa.html"><p>RSA加密解密</p>
+        <p>RSA加密和解密工具</p>
     </a>
-    <a class="tool" href="/tinyimg"><p>图片压缩</p>
-        <p>https://oktools.net/tinyimg</p>
+    <a class="tool" href="pages/tinyimg.html"><p>图片压缩</p>
+        <p>图片压缩工具</p>
     </a>
-    <a class="tool" href="/qrcode"><p>二维码制作</p>
-        <p>https://oktools.net/qrcode</p>
+    <a class="tool" href="pages/qrcode.html"><p>二维码制作</p>
+        <p>二维码生成工具</p>
     </a>
-    <a class="tool" href="#" onclick="hrefForNoTLS('/websocket')"><p>WebSocket测试</p>
-        <p>https://oktools.net/websocket</p>
+    <a class="tool" href="pages/websocket.html"><p>WebSocket测试</p>
+        <p>WebSocket连接测试工具</p>
     </a>
-    <a class="tool" href="/regex"><p>正则表达式测试</p>
-        <p>https://oktools.net/regex</p>
+    <a class="tool" href="pages/regex.html"><p>正则表达式测试</p>
+        <p>正则表达式测试工具</p>
     </a>
 </div>
-<script>
-    function addFavorite() {
-        try {
-            window.sidebar.addPanel(location.href, document.title, "");
-        } catch (e) {
-            try {
-                window.external.addFavorite(document.title, location.href)
-            } catch (e) {
-                alert("请使用快捷键Ctrl+D添加到收藏");
-            }
-        }
-    }
-    function hrefForNoTLS(path) {
-        window.location.href = 'http://' + window.location.host + path;
-    }
-</script>
 <script>
     var _hmt = _hmt || [];
     let hm = document.createElement("script");

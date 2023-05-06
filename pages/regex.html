@@ -6,10 +6,10 @@
     <meta name="keywords" content="正则表达式,正则匹配,正则测试,常用正则表达式">
     <meta name="description" content="在线正则测试工具,正则匹配,正则测试,常用正则表达式">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
 </head>
 <body>
-{{template "aside"}}
+<div id="aside"></div>
 <main>
     <div class="container">
         <h1>正则表达式</h1>
@@ -34,6 +34,12 @@
         <div id="tables"></div>
     </div>
 </main>
-<script src="./static/js/regex.js"></script>
+<script src="../static/js/regex.js"></script>
+<script src="../static/js/jquery-3.6.4.min.js"></script>
+<script>
+    $.get("./aside.html", function(data) {
+        $("#aside").html(data);
+    });
+</script>
 </body>
 </html>

@@ -6,11 +6,11 @@
     <meta name="keywords" content="文件Hash计算,MD5计算,SHA1计算,SHA-256计算,SHA512计算,哈希">
     <meta name="description" content="在线文件Hash计算工具,MD5计算,SHA1计算,SHA-256计算,SHA512计算,哈希">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href="./static/css/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
+    <link href="../static/css/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
 </head>
 <body>
-{{template "aside"}}
+<div id="aside"></div>
 <main>
     <div class="container">
         <h1>文件Hash计算</h1>
@@ -35,7 +35,7 @@
             <ul id="tips">
                 <li>可同时选择多个文件计算，</li>
                 <li>使用<a target="_blank" href="https://github.com/brix/crypto-js"
-                         title="Web Cryptography API">crypto-js</a>
+                           title="Web Cryptography API">crypto-js</a>
                     本地计算，文件不会被上传到服务器。
                 </li>
             </ul>
@@ -45,6 +45,14 @@
         </table>
     </div>
 </main>
-<script src="./static/js/file_hash.js"></script>
+
+<script src="../static/js/file_hash.js"></script>
+
+<script src="../static/js/jquery-3.6.4.min.js"></script>
+<script>
+    $.get("aside.html", function(data) {
+        $("#aside").html(data);
+    });
+</script>
 </body>
 </html>

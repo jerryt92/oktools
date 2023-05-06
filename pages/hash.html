@@ -6,10 +6,10 @@
     <meta name="keywords" content="Hash计算,MD5计算,SHA1计算,SHA-256计算,SHA512计算,哈希">
     <meta name="description" content="在线Hash计算工具,MD5计算,SHA1计算,SHA-256计算,SHA512计算,哈希">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
 </head>
 <body>
-{{template "aside"}}
+<div id="aside"></div>
 <main>
     <div class="container">
         <h1>Hash计算</h1>
@@ -35,7 +35,7 @@
         <input id="input_hash" class="input mt-2" rows="1" placeholder="Hash值"/>
     </div>
 </main>
-<script src="./static/js/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+<script src="../static/js/crypto-js/3.1.9-1/crypto-js.min.js"></script>
 <script>
     function calHash() {
         let text = document.getElementById('area_text').value;
@@ -87,6 +87,12 @@
         }
         document.getElementById('input_hash').value = hash;
     }
+</script>
+<script src="../static/js/jquery-3.6.4.min.js"></script>
+<script>
+    $.get("./aside.html", function(data) {
+        $("#aside").html(data);
+    });
 </script>
 </body>
 </html>

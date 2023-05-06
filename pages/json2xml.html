@@ -6,9 +6,9 @@
     <meta name="keywords" content="JSON转XML,XML转JSON">
     <meta name="description" content="在线JSON转XML,XML转JSON工具,JSON转XML,XML转JSON">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
-    <link href="./static/css/highlight.js/9.15.9/styles/idea.min.css" rel="stylesheet">
-    <link href="./static/css/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+    <link href="../static/css/highlight.js/9.15.9/styles/idea.min.css" rel="stylesheet">
+    <link href="../static/css/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
     <style>
         .container {
             max-width: 100%;
@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-{{template "aside"}}
+<div id="aside"></div>
 <main>
     <div class="container">
         <h1>JSON转XML,XML转JSON</h1>
@@ -52,11 +52,11 @@
         </div>
     </div>
 </main>
-<script src="./static/js/highlight.js/9.15.9/highlight.min.js"></script>
-<script src="./static/js/highlight.js/9.15.9/languages/json.min.js"></script>
-<script src="./static/js/highlight.js/9.15.9/languages/xml.min.js"></script>
-<script src="./static/js/fast-xml-parser/3.12.16/parser.min.js"></script>
-<script src="./static/js/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script src="../static/js/highlight.js/9.15.9/highlight.min.js"></script>
+<script src="../static/js/highlight.js/9.15.9/languages/json.min.js"></script>
+<script src="../static/js/highlight.js/9.15.9/languages/xml.min.js"></script>
+<script src="../static/js/fast-xml-parser/3.12.16/parser.min.js"></script>
+<script src="../static/js/clipboard.js/2.0.4/clipboard.min.js"></script>
 <script>
     let area_json = document.getElementById('area_json');
     let area_xml = document.getElementById('area_xml');
@@ -125,6 +125,12 @@
         alert('复制成功')
     }).on('error', function () {
         alert('复制失败,请手动复制')
+    });
+</script>
+<script src="../static/js/jquery-3.6.4.min.js"></script>
+<script>
+    $.get("./aside.html", function(data) {
+        $("#aside").html(data);
     });
 </script>
 </body>

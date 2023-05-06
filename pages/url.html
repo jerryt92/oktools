@@ -6,11 +6,11 @@
     <meta name="keywords" content="URL编码,URL解码,encodeURI,encodeURIComponent">
     <meta name="description" content="在线URL编码、解码工具,URL解码,encodeURI,encodeURIComponent">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href="./static/css/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./static/css/style.css" type="text/css">
+    <link href="../static/css/font-awesome/5.10.0-11/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
 </head>
 <body>
-{{template "aside"}}
+<div id="aside"></div>
 <main>
     <div class="container">
         <h1>URL编码/解码</h1>
@@ -66,6 +66,12 @@
         area_encoded.value = '';
         area_encoded_component.value = '';
     }
+</script>
+<script src="../static/js/jquery-3.6.4.min.js"></script>
+<script>
+    $.get("./aside.html", function(data) {
+        $("#aside").html(data);
+    });
 </script>
 </body>
 </html>
